@@ -1,4 +1,4 @@
-import {EventEmitter, Injectable} from '@angular/core';
+import { Injectable} from '@angular/core';
 import {Recipe} from '../recipes/recipe.model'
 import { Ingredient } from '../shared/ingredient.model';
 import { ShoppingService } from '../shopping-list/shopping.service';
@@ -25,7 +25,7 @@ export class RecipeService{
         ]
         ),
       ];
- recipeSelected = new EventEmitter<Recipe>();
+ 
  getRecipes(){
      return this.recipes.slice();
  }
